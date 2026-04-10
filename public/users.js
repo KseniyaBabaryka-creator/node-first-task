@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 		.then(res => res.json())
 		.then(users => {
 			users.forEach(user => {
-				userList.innerHTML += `<li><a href="/greet?name=${user}">${user}</a></li>`;
+				userList.innerHTML += `<li><a href="/greet?name=${user.name}">${user.name}</a></li>`;
 
 			})
 		})
